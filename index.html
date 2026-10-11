@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keringkam websites | Two directions</title>
+  <meta name="description" content="Two website design directions for keringkam master artisan Norinda K. Su'ut.">
+  <meta name="theme-color" content="#f4f3f0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23b0893f' d='M24 2L26.3 18.46 34.61 13.39 29.54 21.7 46 24 29.54 26.3 34.61 34.61 26.3 29.54 24 46 21.7 29.54 13.39 34.61 18.46 26.3 2 24 18.46 21.7 13.39 13.39 21.7 18.46Z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="site-1/assets/css/fonts.css">
+  <link rel="stylesheet" href="site-2/assets/css/fonts.css">
+  <style>
+    :root { --bg: #f4f3f0; --ink: #1b1a24; --mute: #74727e; --line: rgba(27, 26, 36, .12); --gold: #b0893f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Switzer', 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    .top { display: flex; justify-content: space-between; align-items: center; padding: 30px 56px; font-size: 14px; color: var(--mute); }
+    .top b { color: var(--ink); font-weight: 600; display: inline-flex; align-items: center; gap: 10px; }
+    .top svg { width: 16px; height: 16px; color: var(--gold); }
+    .intro { padding: 40px 56px 54px; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; }
+    h1 { margin: 0; font-family: 'Melodrama', serif; font-weight: 500; font-size: clamp(80px, 9vw, 160px); line-height: .86; letter-spacing: -.01em; animation: rise 1.2s cubic-bezier(.16, 1, .3, 1) both; }
+    .intro p { max-width: 420px; margin: 0; font-size: 17px; line-height: 1.6; color: #44424f; animation: rise 1.2s .15s cubic-bezier(.16, 1, .3, 1) both; }
+    .options { display: flex; gap: 24px; padding: 0 56px 60px; height: min(78vh, 760px); min-height: 620px; }
+    .opt {
+      position: relative; flex: 1; display: flex; flex-direction: column; overflow: hidden; border-radius: 4px;
+      transition: flex-grow .9s cubic-bezier(.16, 1, .3, 1);
+      animation: rise 1.3s cubic-bezier(.16, 1, .3, 1) both;
+    }
+    .opt:nth-child(2) { animation-delay: .12s; }
+    .options:hover .opt { flex-grow: .82; }
+    .options .opt:hover { flex-grow: 1.18; }
+    .opt__img { position: relative; flex: 1; overflow: hidden; }
+    .opt__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 0 0; transition: transform 1.4s cubic-bezier(.16, 1, .3, 1); }
+    .opt:hover .opt__img img { transform: scale(1.04); }
+    .opt__body { display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: end; padding: 30px 32px 32px; }
+    .opt--a { background: #f6eeea; color: #3d0e19; }
+    .opt--b { background: #fdfdfb; color: #131735; box-shadow: inset 0 0 0 1px rgba(19, 23, 53, .1); }
+    .opt__no { font-size: 13px; font-weight: 600; letter-spacing: .02em; opacity: .7; }
+    .opt h2 { margin: 10px 0 0; font-weight: 500; line-height: .92; }
+    .opt--a h2 { font-family: 'Melodrama', serif; font-size: 64px; }
+    .opt--b h2 { font-family: 'Clash Display', sans-serif; font-weight: 600; font-size: 46px; letter-spacing: -.03em; }
+    .opt__idea { margin-top: 10px; font-size: 16px; opacity: .8; }
+    .opt__desc { margin-top: 14px; max-width: 520px; font-size: 15.5px; line-height: 1.55; opacity: .85; }
+    .opt__pages { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .opt__pages span { font-size: 13px; padding: 6px 12px; border: 1px solid currentColor; border-radius: 999px; opacity: .65; }
+    .opt--b .opt__pages span { border-radius: 0; }
+    .go { display: inline-flex; align-items: center; justify-content: center; height: 56px; padding: 0 26px; font-size: 15px; font-weight: 600; white-space: nowrap; transition: transform .6s cubic-bezier(.16, 1, .3, 1); }
+    .opt--a .go { background: #8e1b30; color: #fffaf7; border-radius: 999px; }
+    .opt--b .go { background: #1f3a8f; color: #fdfdfb; }
+    .opt:hover .go { transform: translateY(-4px); }
+    .notes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding: 40px 56px 60px; border-top: 1px solid var(--line); margin: 0 56px; padding-left: 0; padding-right: 0; }
+    .notes h3 { margin: 0 0 10px; font-size: 14px; font-weight: 600; }
+    .notes p { margin: 0; font-size: 14.5px; line-height: 1.6; color: #55535f; }
+    .notes a { text-decoration: underline; text-underline-offset: 3px; }
+    @keyframes rise { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <b><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="currentColor" d="M24 2L26.3 18.46 34.61 13.39 29.54 21.7 46 24 29.54 26.3 34.61 34.61 26.3 29.54 24 46 21.7 29.54 13.39 34.61 18.46 26.3 2 24 18.46 21.7 13.39 13.39 21.7 18.46Z"/></svg>Keringkam websites for Norinda K. Su'ut</b>
+    <span>Design preview for desktop</span>
+  </header>
+
+  <section class="intro">
+    <h1>Two directions</h1>
+    <p>Two complete website concepts for the same keringkam business. Each is built on Norinda's own photographs and story. Open both, scroll all the way through, and choose the one that feels right.</p>
+  </section>
+
+  <section class="options">
+    <a class="opt opt--a" href="site-1/index.html">
+      <div class="opt__img"><img src="preview/site-1.webp" alt="Preview of site 1, Kilauan: a blush and gold homepage with a large gold wordmark"></div>
+      <div class="opt__body">
+        <div>
+          <span class="opt__no">Site 1</span>
+          <h2>Kilauan</h2>
+          <p class="opt__idea">Held to the light: a heritage house for keringkam</p>
+          <p class="opt__desc">Built around the Kilauan brand, with a made-to-order collection, the craft explained step by step, motifs drawn in stitched gold, and a commission journey.</p>
+          <div class="opt__pages"><span>Home</span><span>Collection</span><span>Heritage</span><span>Bespoke</span></div>
+        </div>
+        <span class="go">Open site 1</span>
+      </div>
+    </a>
+    <a class="opt opt--b" href="site-2/index.html">
+      <div class="opt__img"><img src="preview/site-2.webp" alt="Preview of site 2: Norinda K. Su'ut's name beside a wooden embroidery frame on a gauze grid"></div>
+      <div class="opt__body">
+        <div>
+          <span class="opt__no">Site 2</span>
+          <h2>Norinda K. Su'ut</h2>
+          <p class="opt__idea">Stitch by stitch: the artisan's own atelier</p>
+          <p class="opt__desc">Built around Norinda herself, with a gauze you can stitch with your cursor, her work, week-by-week classes, the journey to Kayseri and her own words.</p>
+          <div class="opt__pages"><span>Home</span><span>Work</span><span>Classes</span></div>
+        </div>
+        <span class="go">Open site 2</span>
+      </div>
+    </a>
+  </section>
+
+  <section class="notes">
+    <div><h3>Desktop preview</h3><p>Both sites are designed for desktop screens for now. Mobile layouts come in the next round.</p></div>
+    <div><h3>Photography</h3><p>Pieces, portraits and classes are Norinda's own photos from Instagram and Facebook. A few mood images are placeholders until new product photos are shot. <a href="credits.html">Image credits</a></p></div>
+    <div><h3>Forms</h3><p>Enquiry forms are design only and don't send yet. They will be connected to email or WhatsApp before launch.</p></div>
+  </section>
+</body>
+</html>

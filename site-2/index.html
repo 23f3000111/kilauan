@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Norinda K. Su'ut | Keringkam master artisan</title>
+  <meta name="description" content="Norinda K. Su'ut stitches keringkam, Sarawak's gold-thread embroidery, to order and teaches it to the next generation.">
+  <meta name="theme-color" content="#f6f6f1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' fill='%231f3a8f'/%3E%3Cpath fill='%23e8cf8e' d='M24 6l2 14 10-6-6 10 14 0-14 2 6 10-10-6-2 14-2-14-10 6 6-10-14-2 14 0-6-10 10 6z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/vendor/lenis.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');if(location.hash){window.__hash=location.hash;history.replaceState(null,'',location.pathname+location.search);}setTimeout(function(){if(!window.__nksReady){document.querySelectorAll('.cells,.loader').forEach(function(e){e.style.display='none'});}},6500);</script>
+</head>
+<body data-page="home">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-star" viewBox="0 0 48 48"><path fill="currentColor" d="M24 2L26.3 18.46 34.61 13.39 29.54 21.7 46 24 29.54 26.3 34.61 34.61 26.3 29.54 24 46 21.7 29.54 13.39 34.61 18.46 26.3 2 24 18.46 21.7 13.39 13.39 21.7 18.46Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M5 19L19 5M8 5h11v11"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M20 12H4M10 6l-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M4 12h16M14 6l6 6-6 6"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v6h4v-6H16l.6-4h-3.1V8.9c0-.6.3-.9.9-.9Z"/></symbol>
+</svg>
+
+<!-- loader + transitions: the gauze closes and opens in cells -->
+<div class="cells" aria-hidden="true"></div>
+<div class="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__mono"><span>N</span><span>K</span><span>S</span></div>
+    <svg viewBox="0 0 220 22"><path class="loader__stitch" d="M2 11 L218 11" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="7 5"/></svg>
+    <div class="loader__count">Keringkam atelier</div>
+  </div>
+</div>
+
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-disc" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="nav__mono" href="index.html" aria-label="Norinda K. Su'ut, home"><svg><use href="#i-star"/></svg>Norinda K. Su'ut</a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="work.html"><span data-t="Work">Work</span></a>
+    <a href="classes.html"><span data-t="Classes">Classes</span></a>
+    <a href="index.html#story"><span data-t="Story">Story</span></a>
+    <a href="index.html#journal"><span data-t="Journal">Journal</span></a>
+  </nav>
+  <a class="btn btn--blue nav__cta" href="index.html#contact" data-magnetic><span>Commission a piece</span></a>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" data-hero>
+    <div class="hero__canvas" aria-hidden="true"><canvas></canvas></div>
+    <div class="hero__inner">
+      <p class="label hero__kicker" data-hero-in><svg><use href="#i-star"/></svg>Keringkam master artisan, Sarawak</p>
+      <h1 class="hero__name d-xxl" aria-label="Norinda K. Su'ut">
+        <span class="row"><span>Norinda</span></span>
+        <span class="row"><span>K. Su'ut</span></span>
+      </h1>
+      <div class="hero__bio" data-hero-in>
+        <p>Master artisan, cultural bearer and heritage advocate. Norinda stitches keringkam to order, and teaches it so the next generation can carry it on.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--blue" href="#contact" data-magnetic><span>Commission a piece</span></a>
+          <a class="btn btn--line" href="classes.html" data-magnetic><span>Join a class</span></a>
+        </div>
+      </div>
+      <p class="hero__hint" data-hero-in><i></i>Move across the gauze to stitch. Click to scatter a star.</p>
+      <a class="hero__scroll" href="#story" data-hero-in>Scroll<i></i></a>
+    </div>
+
+    <div class="frame" data-frame>
+      <div class="frame__wood"></div>
+      <span class="frame__peg"></span><span class="frame__peg"></span><span class="frame__peg"></span><span class="frame__peg"></span>
+      <div class="frame__hem"></div>
+      <div class="frame__gauze">
+        <video class="frame__v1" src="assets/video/k-blackgold.mp4" poster="assets/video/k-blackgold-poster.webp" autoplay muted loop playsinline aria-label="Gold keringkam stitches on black gauze"></video>
+        <video class="frame__v2" src="assets/video/v-gold-lace.mp4" muted loop playsinline preload="none" aria-hidden="true" style="position:absolute;inset:0;opacity:0"></video>
+      </div>
+      <span class="frame__tag">From Norinda's frame</span>
+      <div class="frame__statement">
+        <div>
+          <h2>Every stitch<br>is counted.</h2>
+          <p>Keringkam motifs are placed by counting the threads of the gauze.</p>
+        </div>
+      </div>
+      <p class="frame__caption">A selayah in black gauze and gold, 2022</p>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="story">
+    <div class="wrap about">
+      <div>
+        <p class="label" data-fade><svg><use href="#i-star"/></svg>In her words</p>
+        <blockquote class="about__quote" style="margin:28px 0 0">
+          <q data-chars>Jaga dan pelihara warisan Sarawak untuk anak cucu kita.</q>
+          <span data-fade>"Look after Sarawak's heritage, and keep it for our children and grandchildren." Norinda, after a class in 2026.</span>
+        </blockquote>
+      </div>
+      <div class="about__body">
+        <div class="polaroid" data-fade>
+          <svg class="polaroid__pin"><use href="#i-star"/></svg>
+          <div class="polaroid__img" style="aspect-ratio:594/338"><img src="assets/img/k-portrait-wide.webp" alt="Norinda K. Su'ut in a red keringkam selayah beside a gold fringe" loading="lazy"></div>
+          <span class="polaroid__sign">Norinda K. Su'ut</span>
+        </div>
+        <p data-fade>Norinda makes keringkam, the gold-thread embroidery of Sarawak's Malay community, by hand and to order. A single selayah can take months. In 2022 she finished her fourth of the year stitching only at weekends, slowly but surely.</p>
+        <p data-fade>Today she also teaches. Her classes take students from their first threaded needle to finished samplers, and her study of craft has taken her as far as Türkiye.</p>
+        <div class="roles" data-stagger><span>Master artisan</span><span>Cultural bearer</span><span>Heritage advocate</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section services" id="services">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 class="d-xl" data-lines>Work with<br>Norinda</h2>
+        <p class="lead" data-fade>From a veil for your akad nikah to a class for your university, every piece of work is handmade and personal.</p>
+      </div>
+      <div class="svc-list" data-svc>
+        <a class="svc" href="#contact" data-img="0" data-cursor="Enquire">
+          <h3>Bespoke selayah and selendang</h3>
+          <div class="svc__tags"><span>Weddings</span><span>Engagements</span><span>Khatam Al-Quran</span></div>
+          <span class="svc__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="svc" href="work.html" data-img="1" data-cursor="See work">
+          <h3>Pieces for the home</h3>
+          <div class="svc__tags"><span>Table runners</span><span>Framed panels</span><span>Cushion covers</span><span>Bookmarks</span></div>
+          <span class="svc__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="svc" href="classes.html" data-img="2" data-cursor="Classes">
+          <h3>Classes and workshops</h3>
+          <div class="svc__tags"><span>Beginners</span><span>University</span><span>Community</span></div>
+          <span class="svc__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="svc" href="#exchange" data-img="3" data-cursor="Read">
+          <h3>Talks and cultural exchange</h3>
+          <div class="svc__tags"><span>Universities</span><span>Craft schools</span><span>Abroad</span></div>
+          <span class="svc__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="svc" href="#contact" data-img="4" data-cursor="Ask">
+          <h3>Care and preservation advice</h3>
+          <div class="svc__tags"><span>Storage</span><span>Handling</span><span>Heirlooms</span></div>
+          <span class="svc__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </div>
+    <div class="svc-float" aria-hidden="true">
+      <img src="assets/img/k-blackgold.webp" alt="" loading="lazy">
+      <img src="assets/img/c-sampler-frame.webp" alt="" loading="lazy">
+      <img src="assets/img/c-ntw-teach.webp" alt="" loading="lazy">
+      <img src="assets/img/x-kayseri-sign.webp" alt="" loading="lazy">
+      <img src="assets/img/k-carecard.webp" alt="" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section work" id="work" style="padding-left:0;padding-right:0">
+    <div class="wrap" style="padding:0 var(--pad)">
+      <div class="head-row" style="margin-bottom:3vw">
+        <h2 class="d-xl" data-lines>From the<br>frame</h2>
+        <p class="lead" data-fade>Pieces stitched by Norinda, and samplers finished by her students. Drag to look through them.</p>
+      </div>
+    </div>
+    <div class="work__rail" data-rail data-cursor="Drag">
+      <div class="work__track">
+        <article class="card" style="--tilt:-2deg">
+          <div class="card__img"><img src="assets/img/k-blackgold.webp" alt="Black gauze worked with gold flowers and lattice" loading="lazy" draggable="false"></div>
+          <div class="card__meta"><h3>Selayah, black gauze</h3><span>2022</span></div>
+          <p>Finished for a customer's engagement.</p>
+        </article>
+        <article class="card" style="--tilt:1.5deg">
+          <div class="card__img"><img src="assets/img/k-red-detail-a.webp" alt="Red gauze with scattered gold flowers and a vine border" loading="lazy" draggable="false"></div>
+          <div class="card__meta"><h3>Selayah, red gauze</h3><span>Detail</span></div>
+          <p>Scattered flowers inside a climbing vine.</p>
+        </article>
+        <article class="card" style="--tilt:-1deg">
+          <div class="card__img"><img src="assets/img/k-hands-red.webp" alt="Two women opening out a red keringkam embroidered in gold" loading="lazy" draggable="false"></div>
+          <div class="card__meta"><h3>Opened at the frame</h3><span>Red gauze</span></div>
+          <p>A long piece, checked in daylight.</p>
+        </article>
+        <article class="card" style="--tilt:2deg">
+          <div class="card__img"><img src="assets/img/k-red-detail-b.webp" alt="Red selendang scattered with gold stars" loading="lazy" draggable="false"></div>
+          <div class="card__meta"><h3>Selendang, red gauze</h3><span>Detail</span></div>
+          <p>Stars across the field, a border at the hem.</p>
+        </article>
+        <article class="card" style="--tilt:-2.5deg">
+          <div class="card__img"><img src="assets/img/k-selendang-black.webp" alt="Black selendang with a gold lattice border" loading="lazy" draggable="false"></div>
+          <div class="card__meta"><h3>Selendang, black gauze</h3><span>Detail</span></div>
+          <p>A lattice border with scattered stars.</p>
+        </article>
+        <article class="card" style="--tilt:1deg">
+          <div class="card__img"><img src="assets/img/c-sampler-red.webp" alt="A finished student sampler in red gauze with gold stars" loading="lazy" draggable="false"></div>
+          <div class="card__meta"><h3>Student sampler</h3><span>MPU 3442</span></div>
+          <p>Red gauze, a first border and stars.</p>
+        </article>
+        <article class="card" style="--tilt:-1.5deg">
+          <div class="card__img"><img src="assets/img/c-sampler-blue.webp" alt="A finished student sampler in royal blue gauze" loading="lazy" draggable="false"></div>
+          <div class="card__meta"><h3>Student sampler</h3><span>Royal blue</span></div>
+          <p>Finished in class, June 2025.</p>
+        </article>
+        <article class="card" style="--tilt:2deg">
+          <div class="card__img"><img src="assets/img/c-sampler-frame.webp" alt="A maroon sampler still on its wooden frame" loading="lazy" draggable="false"></div>
+          <div class="card__meta"><h3>Still on the frame</h3><span>Maroon</span></div>
+          <p>The pedangan holds the gauze taut.</p>
+        </article>
+      </div>
+    </div>
+    <div class="work__bar">
+      <div class="work__progress"><i></i></div>
+      <div style="display:flex;align-items:center;gap:26px">
+        <a class="text-link" href="work.html">See all work</a>
+        <div class="work__arrows"><button data-prev aria-label="Previous pieces"><svg><use href="#i-left"/></svg></button><button data-next aria-label="Next pieces"><svg><use href="#i-right"/></svg></button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ribbons -->
+  <div class="ribbons" aria-hidden="true">
+    <div class="ribbon ribbon--a"><div class="ribbon__track" data-ribbon="1">Keringkam <svg><use href="#i-star"/></svg> Selayah <svg><use href="#i-star"/></svg> Selendang <svg><use href="#i-star"/></svg> Tikam timbus <svg><use href="#i-star"/></svg> Pedangan <svg><use href="#i-star"/></svg> Tali air <svg><use href="#i-star"/></svg> </div></div>
+    <div class="ribbon ribbon--b"><div class="ribbon__track" data-ribbon="-1">Made by hand in Sarawak <svg><use href="#i-star"/></svg> Selayah and selendang to order <svg><use href="#i-star"/></svg> Classes and workshops <svg><use href="#i-star"/></svg> </div></div>
+  </div>
+
+  <!-- ============ CLASSES ============ -->
+  <section class="section classes" id="classes">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 class="d-xl" data-lines>Learn it<br>stitch by stitch</h2>
+        <p class="lead" data-fade>This is how Norinda's classes unfold, week by week, from a student's first threaded needle to a finished sampler.</p>
+      </div>
+      <div class="stack" data-stack>
+        <article class="lesson">
+          <div>
+            <p class="lesson__no"><b>01</b>Week one</p>
+            <h3>The basics</h3>
+            <p>Getting to know the materials and the frame before the first stitch.</p>
+            <ul>
+              <li>The materials of keringkam</li>
+              <li>Sewing the edges of the selayah or selendang</li>
+              <li>Threading the flat strip through the needle</li>
+              <li>Mounting the gauze on the pedangan</li>
+              <li>Drawing out guide threads</li>
+            </ul>
+          </div>
+          <div class="lesson__imgs">
+            <figure><img src="assets/img/c-week1-edge.webp" alt="Sewing the edge of pink gauze on a small machine" loading="lazy"></figure>
+            <figure><img src="assets/img/c-week1-thread.webp" alt="Threading a needle with flat gold thread" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="lesson">
+          <div>
+            <p class="lesson__no"><b>02</b>Week two</p>
+            <h3>The right technique</h3>
+            <p>By the second week, students stitch with the correct technique. Neatness comes with practice, and Norinda's advice is simple: embroider with the right technique.</p>
+          </div>
+          <div class="lesson__imgs">
+            <figure><img src="assets/img/c-week2.webp" alt="A neat line of gold stitches on pink gauze" loading="lazy"></figure>
+            <figure><img src="assets/img/c-week1-needle.webp" alt="A needle carrying gold thread through gauze" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="lesson">
+          <div>
+            <p class="lesson__no"><b>03</b>Week three</p>
+            <h3>The tali air border</h3>
+            <p>In the third week, students try "membalas tali aek", working the flowing water-channel border along the gauze.</p>
+          </div>
+          <div class="lesson__imgs">
+            <figure><img src="assets/img/c-week3-frame.webp" alt="Red gauze on a frame with a gold border in progress" loading="lazy"></figure>
+            <figure><img src="assets/img/c-week3-student.webp" alt="A student bent over her frame, stitching gold thread" loading="lazy"></figure>
+          </div>
+        </article>
+        <article class="lesson">
+          <div>
+            <p class="lesson__no"><b>04</b>Finished</p>
+            <h3>A sampler of their own</h3>
+            <p>Students in Norinda's MPU 3442 class finished samplers of their own in June 2025, then prepared a special project with the community at Lubok Antu.</p>
+            <a class="btn btn--blue" href="classes.html" style="margin-top:32px" data-magnetic><span>See upcoming classes</span></a>
+          </div>
+          <div class="lesson__imgs">
+            <figure><img src="assets/img/c-mpu-smiles.webp" alt="Students smiling with their finished samplers on frames" loading="lazy"></figure>
+            <figure><img src="assets/img/c-sampler-blue.webp" alt="A finished royal blue sampler with gold stars" loading="lazy"></figure>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXCHANGE ============ -->
+  <section class="section" id="exchange">
+    <div class="wrap exchange__grid">
+      <div>
+        <div class="route" data-route>
+          <svg viewBox="0 0 640 440" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <path class="route__arc-base" d="M520 330 C 470 120, 230 70, 120 150" fill="none" stroke="rgba(19,23,53,.12)" stroke-width="2"/>
+            <path class="route__arc" d="M520 330 C 470 120, 230 70, 120 150" fill="none" stroke="#c39a45" stroke-width="3" stroke-dasharray="8 6"/>
+            <circle class="route__dot" cx="520" cy="330" r="7" fill="#1f3a8f"/>
+            <g class="route__a"><circle cx="520" cy="330" r="11" fill="none" stroke="#1f3a8f" stroke-width="1.5"/><text class="route__city" x="440" y="372">Kuching</text><text class="route__sub" x="440" y="392">Sarawak, Malaysia</text></g>
+            <g class="route__b"><circle cx="120" cy="150" r="11" fill="none" stroke="#1f3a8f" stroke-width="1.5"/><circle cx="120" cy="150" r="5" fill="#1f3a8f"/><text class="route__city" x="70" y="196">Kayseri</text><text class="route__sub" x="70" y="216">Türkiye</text></g>
+          </svg>
+          <div class="route__km"><span data-km>0</span><small>km of keringkam</small></div>
+        </div>
+        <div class="exchange__photos">
+          <figure data-reveal><img src="assets/img/x-kayseri-flags.webp" alt="Norinda with craft teachers at Kayseri University holding embroidered pieces" loading="lazy"></figure>
+          <figure data-reveal><img src="assets/img/x-kayseri-sign.webp" alt="Norinda at the entrance of Kayseri University's vocational school" loading="lazy"></figure>
+          <figure data-reveal><img src="assets/img/x-kayseri-cord.webp" alt="Norinda holding up a braided cord made in a craft class" loading="lazy"></figure>
+        </div>
+      </div>
+      <div class="exchange__body">
+        <p class="label" data-fade><svg><use href="#i-star"/></svg>Cultural exchange, 2025</p>
+        <h2 class="d-lg" style="margin-top:22px" data-lines>From Kuching to Kayseri</h2>
+        <p data-fade>In 2025 Norinda joined a study visit to Kayseri University in Türkiye, at its Mustafa Çıkrıkçıoğlu Vocational School. She met teachers and students of traditional handicrafts and tried their braiding and needlework for herself.</p>
+        <p data-fade>It is the furthest keringkam has travelled with her so far, and a reminder that heritage grows when it is shared.</p>
+      </div>
+    </div>
+
+    <div class="wrap timeline" data-timeline>
+      <div class="timeline__line"><i></i></div>
+      <div class="timeline__track">
+        <div class="event"><b>March 2024</b><h4>A weekly keringkam class</h4><p>Three weeks from the basics to the tali air border.</p></div>
+        <div class="event"><b>June 2025</b><h4>National Training Week</h4><p>Free courses at UNIMAS City Campus, Kuching, and UNIMAS Samarahan.</p></div>
+        <div class="event"><b>June 2025</b><h4>MPU 3442 samplers</h4><p>Students finish their own pieces and plan a project in Lubok Antu.</p></div>
+        <div class="event"><b>2025</b><h4>Kayseri University</h4><p>A study visit to Türkiye's craft students and teachers.</p></div>
+        <div class="event"><b>July 2026</b><h4>National Training Week</h4><p>A two-day class with UNIMAS Business School.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUOTES ============ -->
+  <section class="section quotes" data-quotes>
+    <div class="wrap">
+      <div class="quotes__top">
+        <p class="label"><svg><use href="#i-star"/></svg>Words from the frame</p>
+        <div class="lang" role="group" aria-label="Language">
+          <button aria-pressed="true" data-lang="ms">Bahasa Melayu</button>
+          <button aria-pressed="false" data-lang="en">English</button>
+        </div>
+      </div>
+      <div class="quote-stage">
+        <figure class="quote is-on" style="margin:0"><q data-ms="Sulam dengan teknik yang betul." data-en="Embroider with the right technique.">Sulam dengan teknik yang betul.</q><cite>Norinda's advice to her students, 2026</cite></figure>
+        <figure class="quote" style="margin:0"><q data-ms="Bersatu hati dan bekerjasama." data-en="Work together, with one heart.">Bersatu hati dan bekerjasama.</q><cite>On protecting the keringkam we love, 2026</cite></figure>
+        <figure class="quote" style="margin:0"><q data-ms="Jangan ada perasaan iri hati dan sombong diri antara penyulam." data-en="Let there be no envy or pride between embroiderers.">Jangan ada perasaan iri hati dan sombong diri antara penyulam.</q><cite>To her students after National Training Week, 2026</cite></figure>
+        <figure class="quote" style="margin:0"><q data-ms="Slowly but surely." data-en="Slowly but surely.">Slowly but surely.</q><cite>On finishing her fourth selayah of the year, stitched at weekends, 2022</cite></figure>
+      </div>
+      <div class="quotes__nav">
+        <button data-q-prev aria-label="Previous quote"><svg><use href="#i-left"/></svg></button>
+        <button data-q-next aria-label="Next quote"><svg><use href="#i-right"/></svg></button>
+        <span class="quotes__count"><span data-q-i>1</span> / 4</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNAL ============ -->
+  <section class="section" id="journal">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 class="d-xl" data-lines>Journal</h2>
+        <p class="lead" data-fade>Notes from classes, commissions and travels. Each one opens on Instagram.</p>
+      </div>
+      <div class="journal__grid" data-stagger>
+        <a class="post" href="https://www.instagram.com/keringkam_mas/p/DdaauJHE96X/" target="_blank" rel="noopener">
+          <div class="post__img" style="aspect-ratio:4/3"><img src="assets/img/k-portrait-wide.webp" alt="" loading="lazy"></div>
+          <div class="post__meta"><span>Heritage</span><span>Sep 2026</span></div>
+          <h3><span>A heritage of gold, a legacy of women</span></h3>
+        </a>
+        <a class="post" href="https://www.instagram.com/keringkam_mas/p/DbEyPqviUFr/" target="_blank" rel="noopener">
+          <div class="post__img" style="aspect-ratio:4/3"><img src="assets/img/c-ntw26-group-b.webp" alt="" loading="lazy"></div>
+          <div class="post__meta"><span>Classes</span><span>Jul 2026</span></div>
+          <h3><span>Two days of keringkam at National Training Week</span></h3>
+        </a>
+        <a class="post" href="https://www.instagram.com/keringkam_mas/p/DRcZZb7kxXE/" target="_blank" rel="noopener">
+          <div class="post__img" style="aspect-ratio:4/3"><img src="assets/img/x-kayseri-room.webp" alt="" loading="lazy"></div>
+          <div class="post__meta"><span>Exchange</span><span>Nov 2025</span></div>
+          <h3><span>A study visit to Kayseri University</span></h3>
+        </a>
+        <a class="post" href="https://www.instagram.com/keringkam_mas/p/DLhpc2RO1Ea/" target="_blank" rel="noopener">
+          <div class="post__img" style="aspect-ratio:4/3"><img src="assets/img/c-mpu-student-b.webp" alt="" loading="lazy"></div>
+          <div class="post__meta"><span>Classes</span><span>Jun 2025</span></div>
+          <h3><span>Student samplers, finished</span></h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <p class="label" data-fade><svg><use href="#i-star"/></svg>Commissions and classes</p>
+      <h2 class="contact__big" style="margin-top:24px" data-lines>Let's make something<br>worth keeping.</h2>
+      <div class="contact__grid">
+        <div>
+          <p class="lead" data-fade>Tell Norinda about the occasion, the piece or the class you have in mind. A selayah or selendang can take months, so it helps to ask early.</p>
+          <div class="contact__links" data-stagger>
+            <a href="https://www.instagram.com/keringkam_mas/" target="_blank" rel="noopener">@keringkam_mas on Instagram<svg><use href="#i-ig"/></svg></a>
+            <a href="https://www.facebook.com/norinda.suut" target="_blank" rel="noopener">Norinda Su'ut on Facebook<svg><use href="#i-fb"/></svg></a>
+          </div>
+        </div>
+        <form class="form" data-enquiry novalidate>
+          <fieldset class="field field--full">
+            <legend>I'm interested in</legend>
+            <div class="choice">
+              <label><input type="radio" name="interest" value="A commission" checked><span>A commission</span></label>
+              <label><input type="radio" name="interest" value="A class"><span>A class</span></label>
+              <label><input type="radio" name="interest" value="A talk or exchange"><span>A talk or exchange</span></label>
+              <label><input type="radio" name="interest" value="Care advice"><span>Care advice</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="c-name">Your name</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" required>
+            <span class="field__error">Please add your name.</span>
+          </div>
+          <div class="field">
+            <label for="c-contact">Email or phone number</label>
+            <input id="c-contact" name="contact" type="text" autocomplete="email" required>
+            <span class="field__error">Please add a way for Norinda to reply.</span>
+          </div>
+          <div class="field field--full">
+            <label for="c-msg">Your message</label>
+            <textarea id="c-msg" name="message" required></textarea>
+            <span class="field__error">A few words help Norinda reply.</span>
+          </div>
+          <div class="form__foot">
+            <p class="small">Design preview: this form doesn't send yet. To reach Norinda today, message @keringkam_mas on Instagram.</p>
+            <button class="btn btn--blue" type="submit" data-magnetic><span>Send message</span></button>
+          </div>
+          <div class="form__done" role="status">
+            <h3>Thank you, <span data-done-name>there</span>.</h3>
+            <p>In the finished site your message will go straight to Norinda. For now, please send the same note to @keringkam_mas on Instagram.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div>
+      <p class="footer__sign">Norinda K. Su'ut</p>
+      <p>Keringkam master artisan, cultural bearer and heritage advocate. Sarawak, Malaysia.</p>
+    </div>
+    <div><h4>Explore</h4><ul><li><a href="work.html">Work</a></li><li><a href="classes.html">Classes</a></li><li><a href="index.html#story">Story</a></li><li><a href="index.html#journal">Journal</a></li></ul></div>
+    <div><h4>Follow</h4><ul><li><a href="https://www.instagram.com/keringkam_mas/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/norinda.suut" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+    <div><h4>Enquire</h4><ul><li><a href="index.html#contact">Commission a piece</a></li><li><a href="classes.html#enquire">Join a class</a></li></ul></div>
+  </div>
+  <div class="footer__word" aria-hidden="true" data-footer-word>Keringkam</div>
+  <div class="footer__bottom">
+    <span>© 2026 Norinda K. Su'ut</span>
+    <span>Design preview. Photography by Norinda K. Su'ut; gold lace footage from Pexels. <a href="../credits.html">Credits</a></span>
+  </div>
+</footer>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/SplitText.min.js"></script>
+<script src="assets/vendor/DrawSVGPlugin.min.js"></script>
+<script src="assets/vendor/CustomEase.min.js"></script>
+<script src="assets/vendor/Draggable.min.js"></script>
+<script src="assets/vendor/InertiaPlugin.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/js/focus.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
