@@ -27,6 +27,16 @@
   --pad: clamp(28px, 3.9vw, 72px);
   --ease-silk: cubic-bezier(.65, .01, .05, .99);
   --ease-out: cubic-bezier(.16, 1, .3, 1);
+
+  /* chat assistant theme */
+  --cb-accent: #8e1b30;
+  --cb-accent-2: #b0893f;
+  --cb-ink: #3d0e19;
+  --cb-bg: #fbf4f1;
+  --cb-font: var(--f-text);
+  --cb-display: var(--f-display);
+  --cb-band: url(../img/batik-band-s1.svg);
+  --cb-band-bg: #8e1b30;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -921,3 +931,8 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
   body::after { animation: none; }
 }
+
+/* batik border above the footer, in the Kilauan palette */
+.kband { position: relative; z-index: 2; height: 46px; background: var(--rubia) url(../img/batik-band-s1.svg) 0 50% / auto 46px repeat-x; animation: kdrift 70s linear infinite; }
+@keyframes kdrift { to { background-position: -1200px 50%; } }
+@media (prefers-reduced-motion: reduce) { .kband { animation: none; } }
